@@ -1,4 +1,4 @@
-import { IApi } from '../../core/domain/interfaces/api.interface';
+import { IApi } from '../../core/domain/interfaces/api/api.interface';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
