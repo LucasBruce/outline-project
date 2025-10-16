@@ -1,16 +1,16 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-propor-novo-ato.service',
+  selector: 'app-consultar-ato.component',
   imports: [],
   template: `
     <p>
-      propor-novo-ato.service works!
+      consultar-ato.component works!
     </p>
   `,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProporNovoAtoService {
+export class ConsultarAtoComponent {
 
 }

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProporNovoAtoService } from './propor-novo-ato.service';
+import { ObservacoesComponent } from './observacoes.component';
 
-describe('ProporNovoAtoService', () => {
-  let component: ProporNovoAtoService;
-  let fixture: ComponentFixture<ProporNovoAtoService>;
+describe('ObservacoesComponent', () => {
+  let component: ObservacoesComponent;
+  let fixture: ComponentFixture<ObservacoesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProporNovoAtoService]
+      imports: [ObservacoesComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProporNovoAtoService);
+    fixture = TestBed.createComponent(ObservacoesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

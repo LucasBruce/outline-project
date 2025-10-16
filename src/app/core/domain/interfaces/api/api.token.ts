@@ -1,4 +1,4 @@
 import { InjectionToken } from "@angular/core";
-import { IApi } from "./api.interface";
+import { IApiService } from "./api.interface";
 
-export const ApiService = new InjectionToken<IApi>('Api');
+export const ApiService = new InjectionToken<IApiService>('Api');

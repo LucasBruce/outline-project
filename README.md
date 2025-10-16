@@ -2,23 +2,35 @@
 
 contexto: cpv-ato-delegacao
 
+shared/components/confirmacao-modal.component
+shared/components/inline-message.component
 
 1.funcionalidade - propor-novo-ato:
 
     - (page) propor-novo-ato.component
     - components/propor-novo-ato-card.component
+    - components/propostas-salvas-card.component
     - components/propostas-salvas.component
 
     - (page) alterar-ato-existente.component
+    - components/alterar-ato-existente-stepper.component
     - components/informacoes-norteadores.component
     - components/observacoes.component
     - components/regras-alcada.component
     - components/proposta-criada-enviada.component
 
-2.funcionalidade: acompanhar-votacao
+2.funcionalidade - acompanhar-votacao
 
-3.funcionalidade: consultar-ato
+3.funcionalidade - consultar-ato
 
+    - components/propor-novo-ato-card.component
+    - components/propostas-salvas-card.component
+    - components/propostas-salvas.component
+
+    npm run ng g component core/services/propor-novo-ato/propor-novo-ato.service
+    npm run ng g component core/services/propor-novo-ato/alterar-ato-existente.service
+
+# npm i xlsx - Consegue ler e criar relatorios xls nos 3 formatos (xls, xlsx e csv) - reportar isso para o Herbert
 # npm run ng g service api.service
 # npm run ng g component api.component
 # npm run ng g pipe api.pipe

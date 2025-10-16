@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProporNovoAtoService } from './propor-novo-ato.service';
+import { PropostasSalvasComponent } from './propostas-salvas.component';
 
-describe('ProporNovoAtoService', () => {
-  let component: ProporNovoAtoService;
-  let fixture: ComponentFixture<ProporNovoAtoService>;
+describe('PropostasSalvasComponent', () => {
+  let component: PropostasSalvasComponent;
+  let fixture: ComponentFixture<PropostasSalvasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProporNovoAtoService]
+      imports: [PropostasSalvasComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProporNovoAtoService);
+    fixture = TestBed.createComponent(PropostasSalvasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
