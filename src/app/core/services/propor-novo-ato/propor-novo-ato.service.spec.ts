@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { User } from './user.service';
+import { User } from './propor-novo-ato.service';
 
 describe('User', () => {
   let service: User;

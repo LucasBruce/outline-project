@@ -1,5 +1,28 @@
 # OutlineProject
 
+contexto: cpv-ato-delegacao
+
+
+1.funcionalidade - propor-novo-ato:
+
+    - (page) propor-novo-ato.component
+    - components/propor-novo-ato-card.component
+    - components/propostas-salvas.component
+
+    - (page) alterar-ato-existente.component
+    - components/informacoes-norteadores.component
+    - components/observacoes.component
+    - components/regras-alcada.component
+    - components/proposta-criada-enviada.component
+
+2.funcionalidade: acompanhar-votacao
+
+3.funcionalidade: consultar-ato
+
+# npm run ng g service api.service
+# npm run ng g component api.component
+# npm run ng g pipe api.pipe
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
 
 ## Development server

@@ -1,6 +1,6 @@
+import { IApi } from '../../core/domain/interfaces/api.interface';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { IApi } from '../../core/domain/interfaces/api/api.interface';
 import { lastValueFrom } from 'rxjs';
 
 @Injectable({
