@@ -30,10 +30,14 @@ shared/components/inline-message.component
     npm run ng g component core/services/propor-novo-ato/propor-novo-ato.service
     npm run ng g component core/services/propor-novo-ato/alterar-ato-existente.service
 
+
+
 # npm i xlsx - Consegue ler e criar relatorios xls nos 3 formatos (xls, xlsx e csv) - reportar isso para o Herbert
 # npm run ng g service api.service
 # npm run ng g component api.component
 # npm run ng g pipe api.pipe
+# tree -I "node_modules|dist|www|coverage|.vscode|.angular|public|consultar-ato|acompanhar-votacao" -L 7 > propor-novo-ato.schema.md
+# tree -fi -I "node_modules|dist|www|coverage|.vscode|.angular|public|consultar-ato|acompanhar-votacao" -L 7 > propor-novo-ato.path.md
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
 
