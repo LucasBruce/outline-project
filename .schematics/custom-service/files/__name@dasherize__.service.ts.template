@@ -1,0 +1,9 @@
+import { Injectable } from '@angular/core';
+import { I<%= classify(name) %> } from './<%= dasherize(name) %>.interface';
+
+@Injectable()
+export class <%= classify(name) %>Service implements I<%= classify(name) %> {
+
+  constructor() {}
+
+}

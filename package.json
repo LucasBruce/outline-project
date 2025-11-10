@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build:schematics": "tsc -p tsconfig.schematics.json && npm run copy:schematics",
+    "copy:schematics": "rsync -av --exclude=*.ts .schematics/ .schematics/dist/",
     "test": "ng test"
   },
   "prettier": {
