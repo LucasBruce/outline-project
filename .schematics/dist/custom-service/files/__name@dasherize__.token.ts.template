@@ -1,4 +1,0 @@
-import { InjectionToken } from '@angular/core';
-import { I<%= classify(name) %> } from './<%= name.toLowerCase() %>.interface';
-
-export const <%= name.toLowerCase() %>Token = new InjectionToken<I<%= classify(name) %>>('<%= classify(name) %>');

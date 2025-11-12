@@ -1,0 +1,23 @@
+import { TestBed } from '@angular/core/testing';
+import { <%= classify(name) %>Pipe } from './<%= dasherize(name) %>.pipe';
+
+describe('<%= classify(name) %>Pipe', () => {
+  let pipe: <%= classify(name) %>Pipe;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [<%= classify(name) %>Pipe]
+    });
+
+    pipe = TestBed.inject(<%= classify(name) %>Pipe);
+  });
+
+  it('should be created', () => {
+    expect(pipe).toBeTruthy();
+  });
+
+  it('should transform the value correctly', () => {
+    const result = pipe.transform('teste');
+    expect(result).toBe('teste');
+  });
+});

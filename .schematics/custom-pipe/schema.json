@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "CustomPipeSchema",
+  "title": "Custom Pipe Options",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome do Pipe",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "path": {
+      "type": "string",
+      "description": "Caminho do diretório onde o Pipe será criado",
+      "default": "src/app/pipes"
+    }
+  },
+  "required": ["name"]
+}

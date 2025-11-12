@@ -5,6 +5,16 @@
       "description": "Gera um custom-service com padrão customizado",
       "factory": "./dist/custom-service/index#customService",
       "schema": "./dist/custom-service/schema.json"
+    },
+    "custom-pipe": {
+      "description": "Gera um custom-pipe com padrão customizado",
+      "factory": "./dist/custom-pipe/index#customPipe",
+      "schema": "./dist/custom-pipe/schema.json"
+    },
+    "custom-feature": {
+      "description": "Gera um custom-feature com padrão customizado",
+      "factory": "./dist/custom-feature/index#customFeature",
+      "schema": "./dist/custom-feature/schema.json"
     }
   }
 }

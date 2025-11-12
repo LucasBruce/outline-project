@@ -1,0 +1,12 @@
+import { Pipe, PipeTransform, Injectable } from '@angular/core';
+
+@Pipe({
+  name: '<%= dasherize(name) %>',
+  standalone: true
+})
+@Injectable()
+export class <%= classify(name) %>Pipe implements PipeTransform {
+  transform(value: unknown, ...args: unknown[]): unknown {
+    return value;
+  }
+}

@@ -1,0 +1,16 @@
+import { Routes } from '@angular/router';
+import { <%= classify(name) %>Feature } from './<%= name.toLowerCase() %>.feature';
+
+export const <%= name.toLowerCase() %>Routes = (): Routes => [
+  {
+    /*importar em path a variavel ENV*/
+    path: '',
+    component: <%= classify(name) %>Feature,
+    children: [
+      {
+        path: '',
+        loadComponent: () => import().then((p) => p),
+      },
+    ],
+  },
+];
