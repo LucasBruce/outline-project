@@ -39,6 +39,12 @@ shared/components/inline-message.component
 # tree -I "node_modules|dist|www|coverage|.vscode|.angular|public|consultar-ato|acompanhar-votacao" -L 7 > propor-novo-ato.schema.md
 # tree -fi -I "node_modules|dist|www|coverage|.vscode|.angular|public|consultar-ato|acompanhar-votacao" -L 7 > propor-novo-ato.path.md
 
+# Gerar Dir
+# tree -L 7 -I "node_modules|assets|dist|.git|coverage|*.json|public|app.config.ts|app.html|app.routes.ts|app.scss|app.spec.ts|app.ts|environment.ts|index.html|main.ts|manifest.webmanifest|styles.scss|*.md" > outline-project-dir.md  
+
+# Gerar Apenas Arquivos
+# tree -if --noreport -I "node_modules|assets|dist|.git|coverage|*.json|public|app.config.ts|app.html|app.routes.ts|app.css|app.spec.ts|app.ts|environment.ts|index.html|main.ts|manifest.webmanifest|styles.scss" | grep -E '\.[^/]+$' > outline-project-files.md
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
 
 ## Development server
