@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { <%= classify(name) %>Feature } from './<%= name.toLowerCase() %>.feature';
 
-export const <%= name.toLowerCase() %>Routes = (): Routes => [
+export const <%= camelize(name) %>Routes = (): Routes => [
   {
     /*importar em path a variavel ENV*/
     path: '',
