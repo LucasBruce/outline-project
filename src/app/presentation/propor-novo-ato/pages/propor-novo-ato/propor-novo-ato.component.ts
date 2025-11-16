@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-propor-novo-ato',
@@ -8,14 +8,8 @@ import { Component } from '@angular/core';
       propor-novo-ato works!
     </p>
   `,
-    styles: `
-    button {
-      background: var(--cor-primaria);
-      color: white;
-      border-radius: 8px;
-      padding: 8px 16px;
-    }
-  `
+  styles: ``,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProporNovoAtoComponent {
 

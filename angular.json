@@ -12,7 +12,7 @@
           "inlineStyle": true,
           "standalone": true,
           "style": "scss",
-          "flat": true
+          "flat": false
         }
       },
       "root": "",

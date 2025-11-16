@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ProporNovoAtoCardComponent } from '../../components/propor-novo-ato-card/propor-novo-ato-card.component';
 
-describe('ProporNovoAtoCardComponent', () => {
-  let component: ProporNovoAtoCardComponent;
-  let fixture: ComponentFixture<ProporNovoAtoCardComponent>;
+import { ProporNovoAto } from './propor-novo-ato';
+
+describe('ProporNovoAto', () => {
+  let component: ProporNovoAto;
+  let fixture: ComponentFixture<ProporNovoAto>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProporNovoAtoCardComponent]
+      imports: [ProporNovoAto]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProporNovoAtoCardComponent);
+    fixture = TestBed.createComponent(ProporNovoAto);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
